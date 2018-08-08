@@ -1,12 +1,13 @@
 package com.trainings;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//@WebServlet("/hello") - example with annotations
+@WebServlet("/hello")
 public class HelloWeb extends HttpServlet {
     private static final String URL = "index.jsp";
     private static final String GET_MESSAGE = "This is message from servlet";
